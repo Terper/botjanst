@@ -1,51 +1,77 @@
 :root {
   --text: #353535ff;
   --back: #f5f5f5ff;
-  --fore: #ebebebff;
-  --active: #0053a5ff;
-  --activeh: rgba(0, 82, 165, 0.6);
-  --select: rgba(0, 82, 165, 0.3);
+  --fore: #D1D9DB;
+  --active: #3F88C5;
+  --activeh: #3F88C599;
+  --select: #3F88C599;
 }
 ::selection {
   background-color: var(--select);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: auto;
   font-family: 'Open Sans', sans-serif;
   max-width: 1000px;
   background-color: var(--back);
+  color: var(--text);
 }
+
 
 header {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  align-items: center;
-  padding-top: 1rem;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  background-color: var(--back);
 }
-header a {
-  text-decoration: none;
-  color: var(--text);
+header > div {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px -5px 10px 5px black;
 }
-header a:hover {
-  color: var(--activeh);
-}
-header h1 {
+h1 {
   font-size: 2rem;
-  margin: 0;
+  padding: 1rem;
 }
-.axflag {
-  height: 2rem;
+.nav-toggle {
+  font-size: 2rem;
+  padding: 1rem;
+}
+nav {
+  display: none;
+}
+.nav-open {
+  
+  box-shadow: 0px -5px 10px 5px black;
 }
 
-main p {
-  font-size: 1.225rem;
-  color: var(--text);
+.nav-open nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  font-size: 1.6rem;
 }
-main a {
-  text-decoration: none;
-  color: var(--active);
+
+p {
+  font-size: 1.2rem;
 }
-main a:hover {
-  color: var(--activeh);
+
+
+#hem p {
+  padding-top: 1rem;
+}
+
+#hem img {
+  padding-top: 1rem;
+}
+
+#hem > div {
+  background-color: red;
+  padding: 1rem;
 }

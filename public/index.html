@@ -5,21 +5,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ålands Botjanst</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="main.js"></script>
 </head>
 <body>
-  <header>
-    <a href="./"><h1>Ålands Botjanst</h1></a>
-    <img src='./assets/axflag.svg' alt='Ålands flagga' class="axflag"></img>
+  <header id="header">
+    <div>
+      <a href="./" class="name"><h1>Ålands Botjanst</h1></a>
+      <a href="javascript:void(0);" class="icon nav-toggle" onclick="navToggle()">
+        <i class="fa fa-bars fa-fw" id="nav-toggle"></i>
+      </a>
+    </div>
+    <nav id="nav-main" class="nav-main">
+      <a href="#hem">Hem</a>
+      <a href="#tjänster">Tjänster</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#om-oss">Om oss</a>
+    </nav>
   </header>
   <main>
-    <p>
-      <a href="./404">Det här är en länk</a><br>
-      Det här är vanlig text
-    </p>
+    <section id="hem">
+      <div>
+        <div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio laborum eaque consectetur amet quisquam aspernatur illo repellat facilis dolorem numquam, reprehenderit assumenda nihil, temporibus nesciunt aliquid voluptatibus, quos ipsa incidunt.</p>
+        </div>
+        <div><img src="./assets/pickup.jpg" alt="Pickup lastad med verktyg"></div>
+      </div>
+    </section>
+    <section id="tjänster">
+      <h2>Tjänster</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio laborum eaque consectetur amet quisquam aspernatur illo repellat facilis dolorem numquam, reprehenderit assumenda nihil, temporibus nesciunt aliquid voluptatibus, quos ipsa incidunt.</p>
+    </section>
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+    </section>
+    <section id="om-oss">
+      <h2>Om oss</h2>
+    </section>
   </main>
   <footer></footer>
 </body>
